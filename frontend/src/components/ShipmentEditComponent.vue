@@ -129,7 +129,6 @@ export default {
     mounted() {
         axios.get('http://127.0.0.1:8000/api/shipments/' + this.$route.params.id + '/')
             .then( response => {
-                console.log(response.data)
                 this.shipment = response.data
             });
         this.loadOptions();

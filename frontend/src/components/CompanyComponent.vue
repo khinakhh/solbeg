@@ -52,7 +52,6 @@ export default {
             axios.get('http://127.0.0.1:8000/api/companies/')
                 .then( response => {
                     this.companies = response.data
-                    console.log("this.companies", this.companies)
                 });
         },
         deleteCompany: function(company) {

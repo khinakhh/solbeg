@@ -58,7 +58,6 @@ export default {
             axios.get('http://127.0.0.1:8000/api/shipments/')
                 .then( response => {
                     this.shipments = response.data
-                    console.log("this.shipments", this.shipments)
                 });
         },
         deleteShipment: function(shipment) {

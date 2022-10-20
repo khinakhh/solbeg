@@ -135,7 +135,6 @@ export default {
             axios.get('http://127.0.0.1:8000/api/companies/')
                 .then( options => {
                     this.options = options.data;
-                    console.log("this.options", this.options)
                 });
         },
         create: function (e) {
